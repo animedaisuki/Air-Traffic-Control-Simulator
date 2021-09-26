@@ -1,0 +1,15 @@
+3
+AirplaneTerminal:1:false:6
+1:CSN751
+2:GTI158
+3:empty
+4:empty
+5:empty
+6:empty
+HelicopterTerminal:2:false:2
+1:empty
+2:empty
+AirplaneTerminal:3:false:3
+1:empty
+2:empty
+3:empty
