@@ -14,16 +14,12 @@ import java.util.Objects;
 
 /**
  * Represents an aircraft whose movement is managed by the system.
- *
- * @ass1
  */
 public abstract class Aircraft
         implements OccupancyLevel, Tickable, EmergencyState {
 
     /**
      * Weight of a litre of aviation fuel, in kilograms.
-     *
-     * @ass1
      */
     public static final double LITRE_OF_FUEL_WEIGHT = 0.8;
 
@@ -66,7 +62,6 @@ public abstract class Aircraft
      * @param tasks           task list to be used by aircraft
      * @param fuelAmount      current amount of fuel onboard, in litres
      * @throws IllegalArgumentException if fuelAmount &lt; 0 or if fuelAmount &gt; fuel capacity
-     * @ass1
      */
     protected Aircraft(String callsign, AircraftCharacteristics characteristics,
                        TaskList tasks,
@@ -90,7 +85,6 @@ public abstract class Aircraft
      * Returns the callsign of the aircraft.
      *
      * @return aircraft callsign
-     * @ass1
      */
     public String getCallsign() {
         return callsign;
@@ -100,7 +94,6 @@ public abstract class Aircraft
      * Returns the current amount of fuel onboard, in litres.
      *
      * @return current fuel amount
-     * @ass1
      */
     public double getFuelAmount() {
         return fuelAmount;
@@ -110,7 +103,6 @@ public abstract class Aircraft
      * Returns this aircraft's characteristics.
      *
      * @return aircraft characteristics
-     * @ass1
      */
     public AircraftCharacteristics getCharacteristics() {
         return characteristics;
@@ -123,7 +115,6 @@ public abstract class Aircraft
      * rounded to the nearest integer.
      *
      * @return percentage of fuel remaining
-     * @ass1
      */
     public int getFuelPercentRemaining() {
         return (int) Math
@@ -141,7 +132,6 @@ public abstract class Aircraft
      * </ul>
      *
      * @return total weight of aircraft in kilograms
-     * @ass1
      */
     public double getTotalWeight() {
         return this.getCharacteristics().emptyWeight
@@ -152,7 +142,6 @@ public abstract class Aircraft
      * Returns the task list of this aircraft.
      *
      * @return task list
-     * @ass1
      */
     public TaskList getTaskList() {
         return this.tasks;
@@ -164,7 +153,6 @@ public abstract class Aircraft
      * Different types and models of aircraft have different loading times.
      *
      * @return time to load aircraft, in ticks
-     * @ass1
      */
     public abstract int getLoadingTime();
 
@@ -183,8 +171,6 @@ public abstract class Aircraft
      * (returned by {@link #getLoadingTime()}) is 3, the amount of fuel should increase by
      * 40 litres each tick. Note that refuelling should not result in the aircraft's fuel onboard
      * exceeding its maximum fuel capacity.
-     *
-     * @ass1
      */
     @Override
     public void tick() {
@@ -222,7 +208,6 @@ public abstract class Aircraft
      * For example, {@code "AIRPLANE ABC123 AIRBUS_A320 LOAD (EMERGENCY)"}.
      *
      * @return string representation of this aircraft
-     * @ass1
      */
     @Override
     public String toString() {
@@ -236,8 +221,6 @@ public abstract class Aircraft
 
     /**
      * {@inheritDoc}
-     *
-     * @ass1
      */
     @Override
     public void declareEmergency() {
@@ -246,8 +229,6 @@ public abstract class Aircraft
 
     /**
      * {@inheritDoc}
-     *
-     * @ass1
      */
     @Override
     public void clearEmergency() {
@@ -256,8 +237,6 @@ public abstract class Aircraft
 
     /**
      * {@inheritDoc}
-     *
-     * @ass1
      */
     @Override
     public boolean hasEmergency() {

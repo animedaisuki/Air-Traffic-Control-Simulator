@@ -20,8 +20,6 @@ import java.util.*;
  * The control tower is responsible for managing the operations of the airport, including arrivals
  * and departures in/out of the airport, as well as aircraft that need to be loaded with cargo
  * at gates in terminals.
- *
- * @ass1
  */
 public class ControlTower implements Tickable {
     /**
@@ -86,7 +84,6 @@ public class ControlTower implements Tickable {
      * Adds the given terminal to the jurisdiction of this control tower.
      *
      * @param terminal terminal to add
-     * @ass1
      */
     public void addTerminal(Terminal terminal) {
         this.terminals.add(terminal);
@@ -101,7 +98,6 @@ public class ControlTower implements Tickable {
      * Adding or removing elements from the returned list should not affect the original list.
      *
      * @return all terminals
-     * @ass1
      */
     public List<Terminal> getTerminals() {
         return new ArrayList<>(this.terminals);
@@ -118,7 +114,6 @@ public class ControlTower implements Tickable {
      * @param aircraft aircraft to add
      * @throws NoSuitableGateException if there is no suitable gate for an aircraft with a current
      *                                 task type of {@code WAIT} or {@code LOAD}
-     * @ass1
      */
     public void addAircraft(Aircraft aircraft) throws NoSuitableGateException {
         TaskType currentTaskType =
@@ -145,7 +140,6 @@ public class ControlTower implements Tickable {
      * Adding or removing elements from the returned list should not affect the original list.
      *
      * @return all aircraft
-     * @ass1
      */
     public List<Aircraft> getAircraft() {
         return new ArrayList<>(this.aircraft);
@@ -170,7 +164,6 @@ public class ControlTower implements Tickable {
      * @param aircraft aircraft for which to find gate
      * @return gate for given aircraft if one exists
      * @throws NoSuitableGateException if no suitable gate could be found
-     * @ass1
      */
     public Gate findUnoccupiedGate(Aircraft aircraft)
             throws NoSuitableGateException {
@@ -203,7 +196,6 @@ public class ControlTower implements Tickable {
      *
      * @param aircraft aircraft whose gate to find
      * @return gate occupied by the given aircraft; or null if none exists
-     * @ass1
      */
     public Gate findGateOfAircraft(Aircraft aircraft) {
         for (Terminal terminal : this.terminals) {
@@ -218,14 +210,6 @@ public class ControlTower implements Tickable {
 
     /**
      * Advances the simulation by one tick.
-     * <p>
-     * On each tick, the control tower should call {@link Aircraft#tick()} on all aircraft managed
-     * by the control tower.
-     * <p>
-     * Note that the actions performed by {@code tick()} are very simple at the moment and will be
-     * expanded on in assignment 2.
-     *
-     * @ass1
      */
     @Override
     public void tick() {

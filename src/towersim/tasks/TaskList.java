@@ -5,8 +5,6 @@ import java.util.List;
 
 /**
  * Represents a circular list of tasks for an aircraft to cycle through.
- *
- * @ass1
  */
 public class TaskList {
     /**
@@ -25,7 +23,6 @@ public class TaskList {
      * task in the given list.
      *
      * @param tasks list of tasks
-     * @ass1
      */
     public TaskList(List<Task> tasks) {
         this.tasks = tasks;
@@ -112,7 +109,6 @@ public class TaskList {
      * Returns the current task in the list.
      *
      * @return current task
-     * @ass1
      */
     public Task getCurrentTask() {
         return this.tasks.get(this.currentTaskIndex);
@@ -128,7 +124,6 @@ public class TaskList {
      * this method should return the first element of the list.
      *
      * @return next task
-     * @ass1
      */
     public Task getNextTask() {
         int nextTaskIndex = (this.currentTaskIndex + 1) % this.tasks.size();
@@ -144,7 +139,6 @@ public class TaskList {
      * Note that the list is treated as circular, so if the current task is the last in the list,
      * the new current task should be the first element of the list.
      *
-     * @ass1
      */
     public void moveToNextTask() {
         this.currentTaskIndex = (this.currentTaskIndex + 1) % this.tasks.size();
@@ -165,7 +159,6 @@ public class TaskList {
      * {@code "TaskList currently on WAIT [3/5]"}.
      *
      * @return string representation of this task list
-     * @ass1
      */
     @Override
     public String toString() {

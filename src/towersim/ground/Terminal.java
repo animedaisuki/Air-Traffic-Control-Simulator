@@ -18,14 +18,10 @@ import java.util.Objects;
 
 /**
  * Represents an airport terminal building, containing several aircraft gates.
- *
- * @ass1
  */
 public abstract class Terminal implements EmergencyState, OccupancyLevel {
     /**
      * Maximum possible number of gates allowed at a single terminal.
-     *
-     * @ass1
      */
     public static final int MAX_NUM_GATES = 6;
 
@@ -54,7 +50,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
      * Newly created terminals should not be in a state of emergency by default.
      *
      * @param terminalNumber identifying number of this terminal
-     * @ass1
      */
     protected Terminal(int terminalNumber) {
         this.terminalNumber = terminalNumber;
@@ -66,7 +61,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
      * Returns this terminal's terminal number.
      *
      * @return terminal number
-     * @ass1
      */
     public int getTerminalNumber() {
         return terminalNumber;
@@ -80,7 +74,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
      *
      * @param gate gate to add to terminal
      * @throws NoSpaceException if there is no space at the terminal for the new gate
-     * @ass1
      */
     public void addGate(Gate gate) throws NoSpaceException {
         if (this.gates.size() == MAX_NUM_GATES) {
@@ -99,7 +92,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
      * Adding or removing elements from the returned list should not affect the original list.
      *
      * @return list of terminal's gates
-     * @ass1
      */
     public List<Gate> getGates() {
         return new ArrayList<>(this.gates);
@@ -115,7 +107,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
      *
      * @return first non-occupied gate in this terminal
      * @throws NoSuitableGateException if all gates in this terminal are occupied
-     * @ass1
      */
     public Gate findUnoccupiedGate() throws NoSuitableGateException {
         for (Gate gate : this.gates) {
@@ -129,8 +120,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
 
     /**
      * {@inheritDoc}
-     *
-     * @ass1
      */
     @Override
     public void declareEmergency() {
@@ -139,8 +128,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
 
     /**
      * {@inheritDoc}
-     *
-     * @ass1
      */
     @Override
     public void clearEmergency() {
@@ -149,8 +136,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
 
     /**
      * {@inheritDoc}
-     *
-     * @ass1
      */
     @Override
     public boolean hasEmergency() {
@@ -167,7 +152,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
      * {@code 2/3 = 0.666...} and the rounded percentage is 67%, so 67 should be returned.
      *
      * @return percentage of occupied gates in this terminal, 0 to 100
-     * @ass1
      */
     @Override
     public int calculateOccupancyLevel() {
@@ -198,7 +182,6 @@ public abstract class Terminal implements EmergencyState, OccupancyLevel {
      * of an object.
      *
      * @return string representation of this terminal
-     * @ass1
      */
     @Override
     public String toString() {

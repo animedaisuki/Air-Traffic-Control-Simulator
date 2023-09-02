@@ -9,8 +9,6 @@ import java.util.List;
 
 /**
  * Represents an aircraft capable of carrying freight cargo.
- *
- * @ass1
  */
 public class FreightAircraft extends Aircraft {
 
@@ -34,7 +32,6 @@ public class FreightAircraft extends Aircraft {
      * @param freightAmount   current amount of freight onboard, in kilograms
      * @throws IllegalArgumentException if freightAmount &lt; 0 or if freightAmount &gt; freight
      *                                  capacity
-     * @ass1
      */
     public FreightAircraft(String callsign,
                            AircraftCharacteristics characteristics,
@@ -66,7 +63,6 @@ public class FreightAircraft extends Aircraft {
      * </ul>
      *
      * @return total weight of aircraft in kilograms
-     * @ass1
      */
     @Override
     public double getTotalWeight() {
@@ -92,7 +88,6 @@ public class FreightAircraft extends Aircraft {
      * rounded to the nearest whole kilogram.
      *
      * @return loading time in ticks
-     * @ass1
      */
     @Override
     public int getLoadingTime() {
@@ -117,7 +112,6 @@ public class FreightAircraft extends Aircraft {
      * The calculated value should be rounded to the nearest percentage point.
      *
      * @return occupancy level as a percentage
-     * @ass1
      */
     @Override
     public int calculateOccupancyLevel() {
@@ -130,7 +124,6 @@ public class FreightAircraft extends Aircraft {
      * task's load percentage.
      *
      * @return total freight to be loaded, in kilograms
-     * @ass1
      */
     private int getFreightToLoad() {
         int freightCapacity = this.getCharacteristics().freightCapacity;
@@ -164,8 +157,6 @@ public class FreightAircraft extends Aircraft {
      * According to {@link #getLoadingTime()}, this amount of freight will take 2 ticks to load.
      * So, a single call to {@code tick()} should increase the amount of freight onboard by
      * 26,000kg / 2 = 13,000kg.
-     *
-     * @ass1
      */
     @Override
     public void tick() {

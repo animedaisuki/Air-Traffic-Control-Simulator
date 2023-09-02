@@ -180,7 +180,7 @@ public class ViewModel {
                         registerChange();
                     }
                 };
-        return eventEventHandler; // TODO implement for assignment 2
+        return eventEventHandler;
     }
 
     /**
@@ -203,7 +203,7 @@ public class ViewModel {
                         registerChange();
                     }
                 };
-        return eventEventHandler; // TODO implement for assignment 2
+        return eventEventHandler;
     }
 
     /**
@@ -255,7 +255,7 @@ public class ViewModel {
                         }
                     }
                 };
-        return eventEventHandler; // TODO implement for assignment 2
+        return eventEventHandler;
     }
 
     /**

@@ -9,15 +9,11 @@ import java.util.List;
 
 /**
  * Represents an aircraft capable of carrying passenger cargo.
- *
- * @ass1
  */
 public class PassengerAircraft extends Aircraft {
 
     /**
      * Average weight of a single passenger including their baggage, in kilograms.
-     *
-     * @ass1
      */
     public static final double AVG_PASSENGER_WEIGHT = 90;
 
@@ -41,7 +37,6 @@ public class PassengerAircraft extends Aircraft {
      * @param numPassengers   current number of passengers onboard
      * @throws IllegalArgumentException if numPassengers &lt; 0 or if numPassengers &gt; passenger
      *                                  capacity
-     * @ass1
      */
     public PassengerAircraft(String callsign,
                              AircraftCharacteristics characteristics,
@@ -74,7 +69,6 @@ public class PassengerAircraft extends Aircraft {
      * </ul>
      *
      * @return total weight of aircraft in kilograms
-     * @ass1
      */
     @Override
     public double getTotalWeight() {
@@ -101,7 +95,6 @@ public class PassengerAircraft extends Aircraft {
      * {@code log(114) = 2.057} rounded to <b>2 ticks</b>.
      *
      * @return loading time in ticks
-     * @ass1
      */
     @Override
     public int getLoadingTime() {
@@ -119,7 +112,6 @@ public class PassengerAircraft extends Aircraft {
      * The calculated value should be rounded to the nearest percentage point.
      *
      * @return occupancy level as a percentage
-     * @ass1
      */
     @Override
     public int calculateOccupancyLevel() {
@@ -132,7 +124,6 @@ public class PassengerAircraft extends Aircraft {
      * task's load percentage.
      *
      * @return total number of passengers to be loaded
-     * @ass1
      */
     private int getPassengersToLoad() {
         int passengerCapacity = this.getCharacteristics().passengerCapacity;
@@ -166,8 +157,6 @@ public class PassengerAircraft extends Aircraft {
      * According to {@link #getLoadingTime()}, this number of passengers will take 2 ticks to load.
      * So, a single call to {@code tick()} should increase the number of passengers onboard by
      * 68 / 2 = 34.
-     *
-     * @ass1
      */
     @Override
     public void tick() {

@@ -6,8 +6,6 @@ import java.util.Objects;
  * Represents a task currently assigned to an aircraft.
  * <p>
  * Tasks relate to an aircraft's movement and ground operations.
- *
- * @ass1
  */
 public class Task {
     /**
@@ -24,7 +22,6 @@ public class Task {
      * Creates a new Task of the given task type.
      *
      * @param type type of task
-     * @ass1
      */
     public Task(TaskType type) {
         this.type = type;
@@ -39,7 +36,6 @@ public class Task {
      *
      * @param type        type of task
      * @param loadPercent percentage of maximum capacity to load
-     * @ass1
      */
     public Task(TaskType type, int loadPercent) {
         this.type = type;
@@ -50,7 +46,6 @@ public class Task {
      * Returns the type of this task.
      *
      * @return task type
-     * @ass1
      */
     public TaskType getType() {
         return type;
@@ -60,7 +55,6 @@ public class Task {
      * Returns the load percentage specified when constructing the task, or 0 if none was specified.
      *
      * @return task load percentage
-     * @ass1
      */
     public int getLoadPercent() {
         return loadPercent;
@@ -78,7 +72,6 @@ public class Task {
      * </ul>
      *
      * @return string representation of this task
-     * @ass1
      */
     @Override
     public String toString() {

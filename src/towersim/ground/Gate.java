@@ -15,8 +15,6 @@ import java.util.Objects;
 
 /**
  * Represents an aircraft gate with facilities for a single aircraft to be parked.
- *
- * @ass1
  */
 public class Gate {
 
@@ -38,7 +36,6 @@ public class Gate {
      * Initially, there should be no aircraft occupying the gate.
      *
      * @param gateNumber identifying number of this gate
-     * @ass1
      */
     public Gate(int gateNumber) {
         this.gateNumber = gateNumber;
@@ -49,7 +46,6 @@ public class Gate {
      * Returns this gate's gate number.
      *
      * @return gate number
-     * @ass1
      */
     public int getGateNumber() {
         return gateNumber;
@@ -63,7 +59,6 @@ public class Gate {
      *
      * @param aircraft aircraft to park at gate
      * @throws NoSpaceException if the gate is already occupied by an aircraft
-     * @ass1
      */
     public void parkAircraft(Aircraft aircraft) throws NoSpaceException {
         if (this.isOccupied()) {
@@ -77,8 +72,6 @@ public class Gate {
      * Removes the currently parked aircraft from the gate.
      * <p>
      * If no aircraft is parked at the gate, no action should be taken.
-     *
-     * @ass1
      */
     public void aircraftLeaves() {
         this.aircraftAtGate = null;
@@ -88,7 +81,6 @@ public class Gate {
      * Returns true if there is an aircraft currently parked at the gate, or false otherwise.
      *
      * @return whether an aircraft is currently parked
-     * @ass1
      */
     public boolean isOccupied() {
         return this.aircraftAtGate != null;
@@ -98,7 +90,6 @@ public class Gate {
      * Returns the aircraft currently parked at the gate, or null if there is no aircraft parked.
      *
      * @return currently parked aircraft
-     * @ass1
      */
     public Aircraft getAircraftAtGate() {
         return this.aircraftAtGate;
@@ -115,7 +106,6 @@ public class Gate {
      * For example: {@code "Gate 15 [ABC123]"} or {@code "Gate 24 [empty]"}.
      *
      * @return string representation of this gate
-     * @ass1
      */
     @Override
     public String toString() {
@@ -129,7 +119,6 @@ public class Gate {
      * Returns true if and only if this gate is equal to the other given gate.
      *
      * @param obj other object to check equality
-     * @return true if equal, false otherwise
      */
     @Override
     public boolean equals(Object obj) {

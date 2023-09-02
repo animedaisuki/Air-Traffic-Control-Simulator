@@ -8,12 +8,10 @@ package towersim.util;
  * <p>
  * Implementing classes can be in a state of emergency which may be manually cleared by calling
  * {@code clearEmergency()}.
- * @ass1
  */
 public interface EmergencyState {
     /**
      * Declares a state of emergency.
-     * @ass1
      */
     void declareEmergency();
 
@@ -21,7 +19,6 @@ public interface EmergencyState {
      * Clears any active state of emergency.
      * <p>
      * Has no effect if there was no emergency prior to calling this method.
-     * @ass1
      */
     void clearEmergency();
 
@@ -29,7 +26,6 @@ public interface EmergencyState {
      * Returns whether or not a state of emergency is currently active.
      *
      * @return true if in emergency; false otherwise
-     * @ass1
      */
     boolean hasEmergency();
 }
