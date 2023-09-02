@@ -1,2 +1,5 @@
 # Project exclude paths
 /out/
+ass2_given.zip
+output.txt
+.idea/
