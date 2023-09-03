@@ -22,14 +22,6 @@ Persistent Data
 Capability to save and load the state of the simulation
 Loading data files for elapsed ticks, aircraft information, queue states, and terminal/gate configurations
 
-# Usage
-The main entry point of the application is the Launcher class located in the towersim package. This class initializes the tick count, aircraft data, queue data, and terminal/gate configurations and launches the GUI.
-
-```bash
-javac Launcher.java
-java Launcher
-```
-
 # Unit Tests
 JUnit 4 tests for the **LandingQueue** class are located in **LandingQueueTest**.
 Selected methods of **ControlTowerInitialiser** are tested in **ControlTowerInitialiserTest**.
