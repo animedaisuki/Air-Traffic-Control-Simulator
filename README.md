@@ -8,12 +8,15 @@ The project aims to simulate a basic Air Traffic Control (ATC) system. It builds
 - Ability to add or remove aircraft from queues
 - Capability to check the presence of an aircraft in a queue
 - Listing of all aircraft in the queue in order
+- 
 **Control Tower**
 - Manages actions like aircraft landing, takeoff, and queuing
 - Enhanced gate assignment logic
+- 
 **Data Initialization**
 - A control tower initializer class that loads information from data files
 - Support for loading elapsed ticks, aircraft information, queue states, and terminal/gate configurations
+- 
 **User Interface**
 - A simple GUI implemented with JavaFX
 - Event-based actions like declaring and clearing emergency states
