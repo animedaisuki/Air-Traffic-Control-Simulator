@@ -1,4 +1,4 @@
-# Airport Simulator
+# Air Traffic Control Simulator
 # Overview
 The project aims to simulate a basic Air Traffic Control (ATC) system. It builds on an extensible core that includes functionalities like aircraft queuing, terminal management, and gate assignments. This advanced version introduces additional features such as persistent data storage, a simple graphical user interface (GUI), and event-based actions like emergency states and task scheduling.
 
