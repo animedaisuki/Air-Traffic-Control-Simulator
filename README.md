@@ -1,8 +1,8 @@
 # Air Traffic Control Simulator
-# Overview
+## Overview
 The project aims to simulate a basic Air Traffic Control (ATC) system. It builds on an extensible core that includes functionalities like aircraft queuing, terminal management, and gate assignments. This advanced version introduces additional features such as persistent data storage, a simple graphical user interface (GUI), and event-based actions like emergency states and task scheduling.
 
-# Features
+##  Features
 **Aircraft Queues**
 - Support for landing and takeoff queues
 - Ability to add or remove aircraft from queues
@@ -25,13 +25,13 @@ The project aims to simulate a basic Air Traffic Control (ATC) system. It builds
 - Capability to save and load the state of the simulation
 - Loading data files for elapsed ticks, aircraft information, queue states, and terminal/gate configurations
 
-# Unit Tests
+##  Unit Tests
 JUnit 4 tests for the **LandingQueue** class are located in **LandingQueueTest**.
 Selected methods of **ControlTowerInitialiser** are tested in **ControlTowerInitialiserTest**.
 
-# Requirements
+##  Requirements
 Java 8 or above
 JavaFX for GUI
 
-# License
+##  License
 The code in this project is licensed under MIT license.
