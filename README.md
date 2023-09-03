@@ -4,23 +4,23 @@ The project aims to simulate a basic Air Traffic Control (ATC) system. It builds
 
 # Features
 **Aircraft Queues**
-Support for landing and takeoff queues
-Ability to add or remove aircraft from queues
-Capability to check the presence of an aircraft in a queue
-Listing of all aircraft in the queue in order
+- Support for landing and takeoff queues
+- Ability to add or remove aircraft from queues
+- Capability to check the presence of an aircraft in a queue
+- Listing of all aircraft in the queue in order
 **Control Tower**
-Manages actions like aircraft landing, takeoff, and queuing
-Enhanced gate assignment logic
+- Manages actions like aircraft landing, takeoff, and queuing
+- Enhanced gate assignment logic
 **Data Initialization**
-A control tower initializer class that loads information from data files
-Support for loading elapsed ticks, aircraft information, queue states, and terminal/gate configurations
+- A control tower initializer class that loads information from data files
+- Support for loading elapsed ticks, aircraft information, queue states, and terminal/gate configurations
 **User Interface**
-A simple GUI implemented with JavaFX
-Event-based actions like declaring and clearing emergency states
-Real-time information update for selected aircraft and suitable gate assignment
-Persistent Data
-Capability to save and load the state of the simulation
-Loading data files for elapsed ticks, aircraft information, queue states, and terminal/gate configurations
+- A simple GUI implemented with JavaFX
+- Event-based actions like declaring and clearing emergency states
+- Real-time information update for selected aircraft and suitable gate assignment
+- Persistent Data
+- Capability to save and load the state of the simulation
+- Loading data files for elapsed ticks, aircraft information, queue states, and terminal/gate configurations
 
 # Unit Tests
 JUnit 4 tests for the **LandingQueue** class are located in **LandingQueueTest**.
